@@ -2,6 +2,7 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
+  "executionRoleArn": "arn:aws:iam::572820849697:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "flask-container",
@@ -28,6 +29,7 @@
   "volumes": [],
   "networkMode": "awsvpc",
   "placementConstraints": [],
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-1:572820849697:task-definition/first-run-task-definition:2",
   "family": "first-run-task-definition",
   "memory": "2048",
   "cpu": "512"
